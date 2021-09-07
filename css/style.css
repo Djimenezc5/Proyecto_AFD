@@ -1,0 +1,9 @@
+#tabEstados{
+    border-style: solid;
+}
+
+#myDiagramDiv{
+    width:400px; 
+    height:150px; 
+    background-color: #DAE4E4;
+}

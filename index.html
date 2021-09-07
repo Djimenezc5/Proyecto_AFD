@@ -4,138 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+
     <title>Proyecto AFD</title>
 </head>
 <body>
-    <table>
+    <table id="tabEstados">
         <!-- Fila 1 -->
-        <tr>
-          <td>Entrada de estados</td>
+        <thead>
+          <th>Entrada</th>
           
-          <td>Digito</td>
+          <th>Digito</th>
           
-          <td> "." </td>
+          <th> "." </th>
       
-          <td>"E"</td>
+          <th>"E"</th>
           
-          <td>"+"</td>
+          <th>"+"</th>
       
-          <td>"-"</td>
+          <th>"-"</th>
       
-          <td>"FDC"</td>
-        </tr>
+          <th>"FDC"</th>
+        </thead>
         <!-- Fila 2 -->
+        <tbody>
         <tr>
           <td>Estado 1</td>
           
-          <td> <input type="text"> </td>
+          <td><input id="E11" type="text"> </td>
           
-          <td><input type="text"></td>
+          <td><input id="E12" type="text"></td>
       
-          <td><input type="text"></td>
+          <td><input id="E13" type="text"></td>
           
-          <td><input type="text"></td>
+          <td><input id="E14" type="text"></td>
       
-          <td><input type="text"></td>
+          <td><input id="E15" type="text"></td>
       
-          <td><input type="text"></td>
+          <td><input id="E16" type="text"></td>
         </tr>
       <!-- Fila 3 -->
       <tr>
         <td>Estado 2</td>
         
-        <td><input type="text"></td>
+        <td><input id="E21" type="text"></td>
         
-        <td><input type="text"></td>
+        <td><input id="E22" type="text"></td>
     
-        <td><input type="text"></td>
+        <td><input id="E23" type="text"></td>
         
-        <td><input type="text"></td>
+        <td><input id="E24" type="text"></td>
     
-        <td><input type="text"></td>
+        <td><input id="E25" type="text"></td>
     
-        <td><input type="text"></td>
+        <td><input id="E26" type="text"></td>
       </tr>
     <!-- Fila 4 -->
     <tr>
       <td>Estado 3</td>
       
-      <td><input type="text"></td>
+      <td><input id="E31" type="text"></td>
       
-      <td><input type="text"></td>
+      <td><input id="E32" type="text"></td>
   
-      <td><input type="text"></td>
+      <td><input id="E33" type="text"></td>
       
-      <td><input type="text"></td>
+      <td><input id="E34" type="text"></td>
   
-      <td><input type="text"></td>
+      <td><input id="E35" type="text"></td>
   
-      <td><input type="text"></td>
+      <td><input id="E36" type="text"></td>
     </tr>
   <!-- Fila 5-->
   <tr>
     <td>Estado 4</td>
     
-    <td><input type="text"></td>
+    <td><input id="E41" type="text"></td>
     
-    <td><input type="text"></td>
+    <td><input id="E42" type="text"></td>
 
-    <td><input type="text"></td>
+    <td><input id="E43" type="text"></td>
     
-    <td><input type="text"></td>
+    <td><input id="E44" type="text"></td>
 
-    <td><input type="text"></td>
+    <td><input id="E45" type="text"></td>
 
-    <td><input type="text"></td>
+    <td><input id="E46" type="text"></td>
   </tr>
 <!-- Fila 6-->
 <tr>
   <td>Estado 5</td>
   
-  <td><input type="text"></td>
+  <td><input id="E51" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E52" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E53" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E54" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E55" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E56" type="text"></td>
 </tr>
 <!-- Fila 7-->
 <tr>
   <td>Estado 6</td>
   
-  <td><input type="text"></td>
+  <td><input id="E61" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E62" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E63" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E64" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E65" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E66" type="text"></td>
 </tr>
 <!-- Fila 8 -->
 <tr>
   <td>Estado 7</td>
   
-  <td><input type="text"></td>
+  <td><input id="E71" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E72" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E73" type="text"></td>
   
-  <td><input type="text"></td>
+  <td><input id="E74" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E75" type="text"></td>
 
-  <td><input type="text"></td>
+  <td><input id="E76" type="text"></td>
 </tr>
+</tbody>
       </table>
+
+      <div id="myDiagramDiv"></div>
+
+      <link rel="prefetch" as="script" href="js/go.js">
+      <link rel="prefetch" as="script" href="js/script.js">
 </body>
 </html>
