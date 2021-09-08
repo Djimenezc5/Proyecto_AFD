@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-
+    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+    <script src="js/go.js"></script>
+    <script src="js/script.js"></script>
     <title>Proyecto AFD</title>
 </head>
 <body>
@@ -30,18 +31,73 @@
         <tbody>
         <tr>
           <td>Estado 1</td>
-          
-          <td><input id="E11" type="text"> </td>
-          
-          <td><input id="E12" type="text"></td>
+          <td> 
+            <select name="Digito" id="E11">
+              <option value="Error">Error</option>
+              <option value="Estado 1">Estado 1</option>
+              <option value="Estado 2">Estado 2</option>
+              <option value="Estado 3">Estado 3</option>
+              <option value="Estado 4">Estado 4</option>
+              <option value="Estado 5">Estado 5</option>
+              <option value="Estado 6">Estado 6</option>
+              <option value="Estado 4">Estado 7</option>
+            </select>
+          </td>
+          <td>
+            <select name="Punto" id="E12">
+              <option value="Error">Error</option>
+              <option value="Estado 1">Estado 1</option>
+              <option value="Estado 2">Estado 2</option>
+              <option value="Estado 3">Estado 3</option>
+              <option value="Estado 4">Estado 4</option>
+              <option value="Estado 5">Estado 5</option>
+              <option value="Estado 6">Estado 6</option>
+              <option value="Estado 4">Estado 7</option>
+            </select>
+          </td>
+          <td>
+            <select name="E" id="E13">
+              <option value="Error">Error</option>
+              <option value="Estado 1">Estado 1</option>
+              <option value="Estado 2">Estado 2</option>
+              <option value="Estado 3">Estado 3</option>
+              <option value="Estado 4">Estado 4</option>
+              <option value="Estado 5">Estado 5</option>
+              <option value="Estado 6">Estado 6</option>
+              <option value="Estado 4">Estado 7</option>
+            </select>
+          </td>
+          <td>
+            <select name="Mas" id="E14">
+              <option value="Error">Error</option>
+              <option value="Estado 1">Estado 1</option>
+              <option value="Estado 2">Estado 2</option>
+              <option value="Estado 3">Estado 3</option>
+              <option value="Estado 4">Estado 4</option>
+              <option value="Estado 5">Estado 5</option>
+              <option value="Estado 6">Estado 6</option>
+              <option value="Estado 4">Estado 7</option>
+            </select>
+          </td>
       
-          <td><input id="E13" type="text"></td>
-          
-          <td><input id="E14" type="text"></td>
-      
-          <td><input id="E15" type="text"></td>
-      
-          <td><input id="E16" type="text"></td>
+          <td>
+            <select name="Menos" id="E15">
+              <option value="Error">Error</option>
+              <option value="Estado 1">Estado 1</option>
+              <option value="Estado 2">Estado 2</option>
+              <option value="Estado 3">Estado 3</option>
+              <option value="Estado 4">Estado 4</option>
+              <option value="Estado 5">Estado 5</option>
+              <option value="Estado 6">Estado 6</option>
+              <option value="Estado 4">Estado 7</option>
+            </select>
+          </td>
+          <td>
+            <select name="FDC" id="E16">
+              <option value="Error">Error</option>
+              <option value="Aceptado">Aceptado</option>
+            </select>
+          </td>
         </tr>
       <!-- Fila 3 -->
       <tr>
@@ -59,92 +115,90 @@
     
         <td><input id="E26" type="text"></td>
       </tr>
-    <!-- Fila 4 -->
-    <tr>
-      <td>Estado 3</td>
-      
-      <td><input id="E31" type="text"></td>
-      
-      <td><input id="E32" type="text"></td>
-  
-      <td><input id="E33" type="text"></td>
-      
-      <td><input id="E34" type="text"></td>
-  
-      <td><input id="E35" type="text"></td>
-  
-      <td><input id="E36" type="text"></td>
-    </tr>
-  <!-- Fila 5-->
-  <tr>
-    <td>Estado 4</td>
+      <!-- Fila 4 -->
+      <tr>
+        <td>Estado 3</td>
+        
+        <td><input id="E31" type="text"></td>
+        
+        <td><input id="E32" type="text"></td>
     
-    <td><input id="E41" type="text"></td>
+        <td><input id="E33" type="text"></td>
+        
+        <td><input id="E34" type="text"></td>
     
-    <td><input id="E42" type="text"></td>
-
-    <td><input id="E43" type="text"></td>
+        <td><input id="E35" type="text"></td>
     
-    <td><input id="E44" type="text"></td>
+        <td><input id="E36" type="text"></td>
+      </tr>
+      <!-- Fila 5-->
+      <tr>
+        <td>Estado 4</td>
+        
+        <td><input id="E41" type="text"></td>
+        
+        <td><input id="E42" type="text"></td>
 
-    <td><input id="E45" type="text"></td>
+        <td><input id="E43" type="text"></td>
+        
+        <td><input id="E44" type="text"></td>
 
-    <td><input id="E46" type="text"></td>
-  </tr>
-<!-- Fila 6-->
-<tr>
-  <td>Estado 5</td>
-  
-  <td><input id="E51" type="text"></td>
-  
-  <td><input id="E52" type="text"></td>
+        <td><input id="E45" type="text"></td>
 
-  <td><input id="E53" type="text"></td>
-  
-  <td><input id="E54" type="text"></td>
+        <td><input id="E46" type="text"></td>
+      </tr>
+      <!-- Fila 6-->
+      <tr>
+        <td>Estado 5</td>
+        
+        <td><input id="E51" type="text"></td>
+        
+        <td><input id="E52" type="text"></td>
 
-  <td><input id="E55" type="text"></td>
+        <td><input id="E53" type="text"></td>
+        
+        <td><input id="E54" type="text"></td>
 
-  <td><input id="E56" type="text"></td>
-</tr>
-<!-- Fila 7-->
-<tr>
-  <td>Estado 6</td>
-  
-  <td><input id="E61" type="text"></td>
-  
-  <td><input id="E62" type="text"></td>
+        <td><input id="E55" type="text"></td>
 
-  <td><input id="E63" type="text"></td>
-  
-  <td><input id="E64" type="text"></td>
+        <td><input id="E56" type="text"></td>
+      </tr>
+      <!-- Fila 7-->
+      <tr>
+        <td>Estado 6</td>
+        
+        <td><input id="E61" type="text"></td>
+        
+        <td><input id="E62" type="text"></td>
 
-  <td><input id="E65" type="text"></td>
+        <td><input id="E63" type="text"></td>
+        
+        <td><input id="E64" type="text"></td>
 
-  <td><input id="E66" type="text"></td>
-</tr>
-<!-- Fila 8 -->
-<tr>
-  <td>Estado 7</td>
-  
-  <td><input id="E71" type="text"></td>
-  
-  <td><input id="E72" type="text"></td>
+        <td><input id="E65" type="text"></td>
 
-  <td><input id="E73" type="text"></td>
-  
-  <td><input id="E74" type="text"></td>
+        <td><input id="E66" type="text"></td>
+      </tr>
+      <!-- Fila 8 -->
+      <tr>
+        <td>Estado 7</td>
+        
+        <td><input id="E71" type="text"></td>
+        
+        <td><input id="E72" type="text"></td>
 
-  <td><input id="E75" type="text"></td>
+        <td><input id="E73" type="text"></td>
+        
+        <td><input id="E74" type="text"></td>
 
-  <td><input id="E76" type="text"></td>
-</tr>
-</tbody>
-      </table>
+        <td><input id="E75" type="text"/></td>
 
-      <div id="myDiagramDiv"></div>
-
-      <link rel="prefetch" as="script" href="js/go.js">
-      <link rel="prefetch" as="script" href="js/script.js">
+        <td><input id="E76" type="text"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Boton Enviar -->
+  <input type="button" onclick="init();" value="Enviar">
+  <div id="myDiagramDiv" style="width:800px; height:800px;"></div>
 </body>
 </html>
