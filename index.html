@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <h1 class="Lines-effect">Diagrama Autómata Finito</h1>
+  <h2 class="Lines-effect">Grupo número 4</h2>
+  <p><h4 class="Lines-effect">Daniel Jiménez, </h4>
+    <h4 class="Lines-effect">Fatima Samayoa, </h4>
+    <h4 class="Lines-effect">Kevin Rodríguez</h4></p>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+    <link rel="stylesheet" href="css/style.css"/> 
     <script src="js/go.js"></script>
     <script src="js/script.js"></script>
     <title>Proyecto AFD</title>
 </head>
 <body>
-    <table id="tabEstados">
+    <table class="rwd-table" id="tabEstados">
         <!-- Fila 1 -->
-        <thead>
+        <thead class="header-row">
           <th>Entrada</th>
           
           <th>Digito</th>
@@ -29,8 +35,8 @@
         </thead>
         <!-- Fila 2 -->
         <tbody>
-        <tr>
-          <td>Estado 1</td>
+        <tr class="row">
+          <td id="E1">Estado 1</td>
           <td> 
             <select name="Digito" id="E11">
               <option value="Error">Error</option>
@@ -100,105 +106,464 @@
           </td>
         </tr>
       <!-- Fila 3 -->
-      <tr>
-        <td>Estado 2</td>
+      <tr class="row">
+        <td id="E2">Estado 2</td>
         
-        <td><input id="E21" type="text"></td>
+        <td>
+          <select name="Digito" id="E21">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E22" type="text"></td>
-    
-        <td><input id="E23" type="text"></td>
+        <td>
+          <select name="Punto" id="E22">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
+
+        <td>
+          <select name="E" id="E23">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E24" type="text"></td>
+        <td>
+          <select name="Mas" id="E24">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+        </td>
     
-        <td><input id="E25" type="text"></td>
+        <td>
+          <select name="Menos" id="E25">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
     
-        <td><input id="E26" type="text"></td>
+        <td>
+          <select name="FDC" id="E26">
+            <option value="Error">Error</option>
+            <option value="Aceptado">Aceptado</option>
+          </select>
+        </td>
       </tr>
       <!-- Fila 4 -->
-      <tr>
-        <td>Estado 3</td>
+      <tr class="row">
+        <td id="E3">Estado 3</td>
         
-        <td><input id="E31" type="text"></td>
+        <td>
+          <select name="Digito" id="E31">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E32" type="text"></td>
+        <td>
+          <select name="Digito" id="E32">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
     
-        <td><input id="E33" type="text"></td>
+        <td>
+          <select name="Digito" id="E33">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E34" type="text"></td>
+        <td>
+          <select name="Digito" id="E34">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
     
-        <td><input id="E35" type="text"></td>
+        <td>
+          <select name="Digito" id="E35">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
     
-        <td><input id="E36" type="text"></td>
+        <td>
+          <select name="FDC" id="E36">
+            <option value="Error">Error</option>
+            <option value="Aceptado">Aceptado</option>
+          </select>
+        </td>
       </tr>
       <!-- Fila 5-->
-      <tr>
-        <td>Estado 4</td>
+      <tr class="row">
+        <td id="E4">Estado 4</td>
         
-        <td><input id="E41" type="text"></td>
+        <td>
+          <select name="Digito" id="E41">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E42" type="text"></td>
+        <td>
+          <select name="Digito" id="E42">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E43" type="text"></td>
+        <td>
+          <select name="Digito" id="E43">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E44" type="text"></td>
+        <td>
+          <select name="Digito" id="E44">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E45" type="text"></td>
+        <td>
+          <select name="Digito" id="E45">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E46" type="text"></td>
+        <td>
+          <select name="FDC" id="E46">
+            <option value="Error">Error</option>
+            <option value="Aceptado">Aceptado</option>
+          </select>
+        </td>
+        </td>
       </tr>
       <!-- Fila 6-->
-      <tr>
-        <td>Estado 5</td>
+      <tr class="row">
+        <td id="E5">Estado 5</td>
         
-        <td><input id="E51" type="text"></td>
+        <td>
+          <select name="Digito" id="E51">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E52" type="text"></td>
+        <td>
+          <select name="Digito" id="E52">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E53" type="text"></td>
+        <td>
+          <select name="Digito" id="E53">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E54" type="text"></td>
+        <td>
+          <select name="Digito" id="E54">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E55" type="text"></td>
+        <td>
+          <select name="Digito" id="E55">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E56" type="text"></td>
+        <td><select name="FDC" id="E56">
+          <option value="Error">Error</option>
+          <option value="Aceptado">Aceptado</option>
+        </select></td>
       </tr>
       <!-- Fila 7-->
-      <tr>
-        <td>Estado 6</td>
+      <tr class="row">
+        <td id="E6">Estado 6</td>
         
-        <td><input id="E61" type="text"></td>
+        <td>
+          <select name="Digito" id="E61">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E62" type="text"></td>
+        <td>
+          <select name="Digito" id="E62">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E63" type="text"></td>
+        <td>
+          <select name="Digito" id="E63">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E64" type="text"></td>
+        <td>
+          <select name="Digito" id="E64">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E65" type="text"></td>
+        <td>
+          <select name="Digito" id="E65">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E66" type="text"></td>
+        <td>
+          <select name="FDC" id="E66">
+            <option value="Error">Error</option>
+            <option value="Aceptado">Aceptado</option>
+          </select>
+        </td>
       </tr>
       <!-- Fila 8 -->
-      <tr>
-        <td>Estado 7</td>
+      <tr class="row">
+        <td id="E7">Estado 7</td>
         
-        <td><input id="E71" type="text"></td>
+        <td>
+          <select name="Digito" id="E71">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E72" type="text"></td>
+        <td>
+          <select name="Digito" id="E72">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E73" type="text"></td>
+        <td>
+          <select name="Digito" id="E73">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
         
-        <td><input id="E74" type="text"></td>
+        <td>
+          <select name="Digito" id="E74">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E75" type="text"/></td>
+        <td>
+          <select name="Digito" id="E75">
+            <option value="Error">Error</option>
+            <option value="Estado 1">Estado 1</option>
+            <option value="Estado 2">Estado 2</option>
+            <option value="Estado 3">Estado 3</option>
+            <option value="Estado 4">Estado 4</option>
+            <option value="Estado 5">Estado 5</option>
+            <option value="Estado 6">Estado 6</option>
+            <option value="Estado 4">Estado 7</option>
+          </select>
+        </td>
 
-        <td><input id="E76" type="text"/></td>
+        <td>
+          <select name="FDC" id="E76">
+            <option value="Error">Error</option>
+            <option value="Aceptado">Aceptado</option>
+          </select>
+        </td>
       </tr>
     </tbody>
   </table>
   <!-- Boton Enviar -->
-  <input type="button" onclick="init();" value="Enviar">
+  <button type="button" onclick="init();" value="Enviar">Enviar</button>
+  <button type="button" onclick="location.reload();" value="Resetear">Resetear</button>
   <div id="myDiagramDiv" style="width:800px; height:800px;"></div>
 </body>
 </html>

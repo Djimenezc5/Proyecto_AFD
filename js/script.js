@@ -1,7 +1,14 @@
+/***
+ * Universidad Mariano Galvez de Guatemala
+ * Grupo numero 4
+ * Autores: Fatima Samayoa, Kevin Rodríguez, Daniel Jiménez
+ * Curso: Autómatas y lenguajes formales.
+ */
 function init(){
+    
     var $ = go.GraphObject.make;
     myDiagram = $(go.Diagram, "myDiagramDiv");
-    //Se agrega la figura al nodo
+
     myDiagram.nodeTemplate =
         $(go.Node, "Auto",
             $(go.Shape, "Ellipse",
@@ -10,29 +17,58 @@ function init(){
             { margin: 5 },
             new go.Binding("text", "key"))
         );
-    //Se agrega el texto del link
+
     myDiagram.linkTemplate =
         $(go.Link,
-          $(go.Shape),                           // this is the link shape (the line)
-          $(go.Shape, { toArrow: "Standard" }),  // this is an arrowhead
-          $(go.TextBlock,                        // this is a Link label
+          $(go.Shape),                           
+          $(go.Shape, { toArrow: "Standard" }),  
+          $(go.TextBlock,                        
             new go.Binding("text", "text"))
         );
-    //Arreglo de nodos
-    var nodeDataArray = [
-        {key: "Estado 1", color: "lightblue"},
-        {key: "Estado 2", color: "lightblue"},
-        {key: "Estado 3", color: "lightblue"},
-        {key: "Estado 4", color: "lightblue"},
-        {key: "Estado 5", color: "lightblue"},
-        {key: "Estado 6", color: "lightblue"},
-        {key: "Estado 7", color: "lightblue"},];
-    //Arreglo enlaceses
-    var linkDataArray = [
-        { to : "Estado 1", from: "Estado 1", text:"Valor1"},
-        { to : "Estado 2", from: "Estado 1", text:"Valor2"},
-        { to : "Estado 4", from: "Estado 2", text:"Valor3"}
-     ]
-    //Graficar los nodos y links o enlaceses
-    myDiagram.model = new go.GraphLinksModel(nodeDataArray,linkDataArray);
+        var model = new go.GraphLinksModel();
+
+            for (let i = 1; i <= 7; i++) {
+                let FDC = document.getElementById("E"+[i]+[6]).value;
+                let Color ="";
+                if(FDC == "Error"){
+                    Color = "green";
+                }
+                else{
+                    Color = "yellow";
+                }
+
+                let ID = document.getElementById("E"+i).innerHTML;
+                if (ID == "Estado 1") {
+                    Color = "orange";
+                }
+                model.addNodeData({ key: ID, color: Color});
+                
+                for (let j = 1; j < 7; j++) {
+                    let VAL = document.getElementById("E"+[i]+[j]).value;
+                    let leyenda="";
+                    if(j==1){
+                        leyenda = "Digito";
+                    }
+                    if(j==2){
+                        leyenda = ".";
+                    }
+                    if(j==3){
+                        leyenda = "E";
+                    }
+                    if(j==4){
+                        leyenda = "+";
+                    }
+                    if(j==5){
+                        leyenda = "-";
+                    }
+                    if(VAL == "Error"){
+
+                    }
+                    else {
+                        model.addLinkData({ to : VAL, from: ID, text:leyenda});
+                    }
+                }
+
+            }
+        myDiagram.model = model;
 }
